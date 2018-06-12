@@ -17,6 +17,7 @@ print """\033[93m
        \/       \/    \/        \/         \/         \033[0m"""
 
 B = '\033[1;34m'
+G = '\033[1;32m'
 R = '\033[31m'
 N = '\033[0m'
 
@@ -40,8 +41,8 @@ def webdav():
          print(R+"[!]"+N+" Upload failed . . .")
          sys.exit(1)
       else:
-         print("[+] File uploaded . . .")
-         print("[+] PATH: "+host + nama)
+         print(G+"[+]"+N+" File uploaded . . .")
+         print(G+"[+]"+N+" PATH: "+host + defacescript)
   except requests.exceptions.MissingSchema:
      print(R+"[!]"+N+" needed link: http://example.com Error: Missing Schema")
   except requests.exceptions.InvalidSchema:
@@ -67,7 +68,7 @@ def webdav():
   except KeyboardInterrupt:
      print(R+"[!]"+N+" Error: Keyboard Interrupt")
   except IOError:
-     print(R+"[!]"+N+" Error: IOError")
+     print(R+"[!]"+N+" Error: Something went wrong")
 
 def cekfile():
   print """
@@ -117,7 +118,7 @@ def cekfile():
   except KeyboardInterrupt:
      print(R+"[!]"+N+" Error: KeyboardInterrupt")
   except IOError:
-     print(R+"[!]"+N+" Error: IOError")
+     print(R+"[!]"+N+" Error: Something went wrong")
 
 if __name__ == '__main__':
   if len(sys.argv) != 3:
