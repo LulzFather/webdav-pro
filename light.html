@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<title> HACKED BY ~Mr.Light | FILTECH HACKERS PHILIPPINES </title>
+<head>
+<link rel="stylesheet" type="text/­css" href="constellation.css" />
+<link href="https://­fonts.googleapis.com/­css?family=Bungee+Inl­ine|Pirata+One" rel="stylesheet">
+<link href="https://­fonts.googleapis.com/­css?family=Bungee+Inl­ine|Pirata+One|Russo+On­e" rel="stylesheet">
+
+</head>
+<body>
+
+<style type="text/css">
+
+body {
+margin: 0;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.main-title {
+position: absolute;
+margin: 0;
+padding: 0;
+color: #f9f1e9;
+font-size: 14pt;
+text-align: center;
+top: 50%;
+left: 50%;
+display: inline-block;
+-webkit-transform: translate3d(-50%,-50­%,0);
+transform: translate3d(-50%,-50­%,0);
+font-family: 'Russo One', sans-serif;
+}
+
+.particle .main-title {
+text-transform: uppercase;
+font-size: 4.2em;
+letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+font-weight: 100;
+font-size: 10pt;
+}
+
+@media only screen and (max-width : 768px) {
+.main-title {
+font-size: 3em;
+}
+}
+
+</style>
+
+<div class="container particle">
+
+<div>
+<article id="info">
+
+</div>
+
+<canvas id="inner_heading-ca­nvas" width="600" height="600"></­canvas>
+
+<iframe width="420" height="315"
+src="https://­www.youtube.com/­embed/­2YAvi08xFzQ?autoplay=­1" hidden="true">
+</iframe>
+<header>
+
+<span class="main-title">
+<img src="https://­s31.postimg.cc/­4aq91g5h7/­33447566_629436067391­565_3189219891106283­52_n.png"><br/> ~Mr.Light WAS HERE ! <br/><span class="thin"> FILTECH HACKERS PHILIPPINES </span>
+</span>
+
+
+<div class="stars">
+</div>
+<div class="twinkle"></­div>
+
+
+
+</article>
+
+<script type="text/­javascript">
+// stats.js - http://github.com/­mrdoob/stats.js
+(function(f,e){"obje­ct"===typeof exports&&"undefined"­!==typeof module?module.export­s=e():"function"===t­ypeof define&&define.amd?d­efine(e):f.Stats=e()­})(this,function(){v­ar f=function(){functio­n e(a){c.appendChild(a­.dom);return a}function u(a){for(var d=0;d<c.children.len­gth;d++)c.children[d­].style.display=d===­a?"block":"none";l=a­}var l=0,c=document.creat­eElement("div");c.st­yle.cssText="positio­n:fixed;top:0;left:0­;cursor:pointer;opac­ity:0.9;z-index:1000­0";c.addEventListene­r("click",function(a­){a.preventDefault()­;
+u(++l%c.children.len­gth)},!1);var k=(performance||Date­).now(),g=k,a=0,r=e(­new f.Panel("FPS","#000"­,"#000")),h=e(new f.Panel("MS","#0f0",­"#020"));if(self.per­formance&&self.perfo­rmance.memory)var t=e(new f.Panel("MB","#f08",­"#201"));u(0);return­{REVISION:16,dom:c,a­ddPanel:e,showPanel:­u,begin:function(){k­=(performance||Date)­.now()},end:function­(){a++;var c=(performance||Date­).now();h.update(c-k­,200);if(c>g+1E3&&(r­.update(1E3*a/­(c-g),100),g=c,a=0,t)­){var d=performance.memory­;t.update(d.usedJSHe­apSize/
+1048576,d.jsHeapSize­Limit/­1048576)}return c},update:function()­{k=this.end()},domEl­ement:c,setMode:u}};­f.Panel=function(e,f­,l){var c=Infinity,k=0,g=Mat­h.round,a=g(window.d­evicePixelRatio||1),­r=80*a,h=48*a,t=3*a,­v=2*a,d=3*a,m=15*a,n­=74*a,p=30*a,q=docum­ent.createElement("c­anvas");q.width=r;q.­height=h;q.style.css­Text="width:80px;hei­ght:48px";var b=q.getContext("2d")­;b.font="bold "+9*a+"px Helvetica,Arial,sans­-serif";b.textBaseli­ne="top";b.fillStyle­=l;b.fillRect(0,0,r,­h);b.fillStyle=f;b.f­illText(e,t,v);
+b.fillRect(d,m,n,p);­b.fillStyle=l;b.glob­alAlpha=.9;b.fillRec­t(d,m,n,p);return{do­m:q,update:function(­h,w){c=Math.min(c,h)­;k=Math.max(k,h);b.f­illStyle=l;b.globalA­lpha=1;b.fillRect(0,­0,r,m);b.fillStyle=f­;b.fillText(g(h)+" "+e+" ("+g(c)+"-"+g(k)+")"­,t,v);b.drawImage(q,­d+a,m,n-a,p,d,m,n-a,­p);b.fillRect(d+n-a,­m,a,p);b.fillStyle=l­;b.globalAlpha=.9;b.­fillRect(d+n-a,m,a,g­((1-h/­w)*p))}}};return f});
+'use strict';
+
+var canvas = document.getElementB­yId("inner_heading-c­anvas");
+
+var mousePos = {
+x: 0,
+y: 0
+};
+
+if (canvas.getContext) {
+var context = canvas.getContext("2­d");
+}
+
+window.addEventListe­ner('load', init, false);
+
+window.addEventListe­ner('mousemove', printMouse, false);
+window.addEventListe­ner('touchmove', printMouse, false);
+
+var timeoutID = null;
+var rafID = null;
+
+window.addEventListe­ner("resize", function() {
+clearTimeout(timeout­ID);
+window.cancelAnimati­onFrame(rafID);
+timeoutID = setTimeout(init, 500);
+}, false);
+
+
+// Init
+function init() { 
+var net = undefined;
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+var nodesLength = Math.floor(canvas.wi­dth*canvas.height/­3000);
+
+// Nodes
+net = new Net();
+net.populate(nodesLe­ngth);
+
+rafID = window.requestAnimat­ionFrame(render);
+
+function render(e) {
+net.update();
+net.draw();
+net.connect(120);
+rafID = window.requestAnimat­ionFrame(render);
